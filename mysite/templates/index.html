@@ -1,0 +1,12 @@
+
+{% extends "base.html" %}
+
+{% block title %}index page{% endblock %}
+
+{% block content %}
+{% for entry in writings_entry %}
+    <h2>{{ entry.title}}</h2>
+    <p> {{entry.body}}</p>
+  <h1>home page</h1>
+  {% endfor %}
+{% endblock %}
